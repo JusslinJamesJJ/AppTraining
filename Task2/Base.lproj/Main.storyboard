@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IDSA Guidelines" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0h0-PB-PPM">
+                                <rect key="frame" x="98.5" y="64" width="217" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="Av2-aw-igI"/>
+                                    <constraint firstAttribute="width" constant="217" id="ujh-tA-0Ko"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <color key="textColor" red="0.074630908536972448" green="0.34974300658549384" blue="0.89808058375634514" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="409-F6-kqE">
+                                <rect key="frame" x="0.0" y="121" width="414" height="775"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="775" id="XIN-GP-8Bs"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="reF-g5-vXS" detailTextLabel="Huv-SX-P7s" rowHeight="91" style="IBUITableViewCellStyleSubtitle" id="VcH-ux-VTI">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="91"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VcH-ux-VTI" id="sF1-b7-zAQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="91"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="reF-g5-vXS">
+                                                    <rect key="frame" x="20" y="25" width="35.5" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Huv-SX-P7s">
+                                                    <rect key="frame" x="20" y="48.5" width="44" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="l4T-Ps-q4o"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="1Oh-XU-r8h"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U9j-tE-CqM">
+                                <rect key="frame" x="326" y="64" width="68" height="44"/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.1137254902" blue="0.1137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="68" id="iwi-2U-naX"/>
+                                    <constraint firstAttribute="height" constant="44" id="lQK-lh-0DO"/>
+                                </constraints>
+                                <state key="normal" image="filter.png"/>
+                                <connections>
+                                    <segue destination="8Zc-bO-OCd" kind="presentation" identifier="popupview" id="6o1-hf-5Xy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="409-F6-kqE" firstAttribute="top" secondItem="0h0-PB-PPM" secondAttribute="bottom" constant="8" id="50S-aR-g4Z"/>
+                            <constraint firstAttribute="bottom" secondItem="409-F6-kqE" secondAttribute="bottom" id="BOr-pi-hJT"/>
+                            <constraint firstItem="409-F6-kqE" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="Dkw-DD-7ms"/>
+                            <constraint firstItem="409-F6-kqE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ElR-QS-EFP"/>
+                            <constraint firstItem="U9j-tE-CqM" firstAttribute="top" secondItem="lZf-ZH-Vew" secondAttribute="top" constant="20" id="FBt-C1-NOu"/>
+                            <constraint firstItem="lZf-ZH-Vew" firstAttribute="trailing" secondItem="U9j-tE-CqM" secondAttribute="trailing" constant="20" id="X2Z-ox-QMb"/>
+                            <constraint firstItem="0h0-PB-PPM" firstAttribute="top" secondItem="lZf-ZH-Vew" secondAttribute="top" constant="20" id="i48-e0-nOu"/>
+                            <constraint firstItem="0h0-PB-PPM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l1i-Ve-F7q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lZf-ZH-Vew"/>
+                    </view>
+                    <connections>
+                        <outlet property="filterbtnOutlet" destination="U9j-tE-CqM" id="bXm-MD-OKy"/>
+                        <outlet property="mytable" destination="409-F6-kqE" id="IHf-YJ-jnt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-749.27536231884062" y="-434.59821428571428"/>
+        </scene>
+        <!--Check Box Modal Popup-->
+        <scene sceneID="PT8-hd-iOR">
+            <objects>
+                <viewController storyboardIdentifier="popupview" modalTransitionStyle="crossDissolve" modalPresentationStyle="currentContext" id="8Zc-bO-OCd" customClass="CheckBoxModalPopup" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o5W-3m-ULY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DHU-4t-rIw">
+                                <rect key="frame" x="52.5" y="289.5" width="309" height="317"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o79-b0-7jl">
+                                        <rect key="frame" x="24" y="41" width="32" height="32"/>
+                                        <state key="normal" image="checkbox_empty.png"/>
+                                        <connections>
+                                            <action selector="AllCheckbox:" destination="8Zc-bO-OCd" eventType="touchUpInside" id="gLY-7p-yCO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bej-zh-QXr">
+                                        <rect key="frame" x="64" y="147" width="32" height="32"/>
+                                        <state key="normal" image="checkbox_empty.png"/>
+                                        <connections>
+                                            <action selector="VirusCheckbox:" destination="8Zc-bO-OCd" eventType="touchUpInside" id="unW-Pb-oxm"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Viruses" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bRa-2M-B58">
+                                        <rect key="frame" x="104" y="152.5" width="57" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="olx-Zh-yZd">
+                                        <rect key="frame" x="64" y="181" width="32" height="32"/>
+                                        <state key="normal" image="checkbox_empty.png"/>
+                                        <connections>
+                                            <action selector="HIV_AIDSCheckbox:" destination="8Zc-bO-OCd" eventType="touchUpInside" id="5u4-Pu-K1i"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HIV/AIDS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xrX-ze-LMc">
+                                        <rect key="frame" x="104" y="186.5" width="69" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N12-c4-dFa">
+                                        <rect key="frame" x="63" y="79" width="32" height="32"/>
+                                        <state key="normal" image="checkbox_empty.png"/>
+                                        <connections>
+                                            <action selector="BacteriaCheckbox:" destination="8Zc-bO-OCd" eventType="touchUpInside" id="1oZ-Ux-Hks"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bacteria" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNV-tM-EHE">
+                                        <rect key="frame" x="103" y="84.5" width="63" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u5R-F6-Xfh">
+                                        <rect key="frame" x="64" y="113" width="32" height="32"/>
+                                        <state key="normal" image="checkbox_empty.png"/>
+                                        <connections>
+                                            <action selector="FungiCheckbox:" destination="8Zc-bO-OCd" eventType="touchUpInside" id="oMB-Yw-UwU"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fungi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I1G-Vv-LG9">
+                                        <rect key="frame" x="104" y="118.5" width="43" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pfJ-fF-dhC">
+                                        <rect key="frame" x="8" y="255" width="134" height="36"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.1137254902" blue="0.1137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="134" id="2CW-WM-scy"/>
+                                            <constraint firstAttribute="height" constant="36" id="g1k-Kh-y5d"/>
+                                        </constraints>
+                                        <state key="normal" title="Apply">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ApplyClicked:" destination="8Zc-bO-OCd" eventType="touchUpInside" id="ott-UE-NZG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CIb-QK-sHG">
+                                        <rect key="frame" x="159" y="255" width="142" height="36"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.1137254902" blue="0.1137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="142" id="cSr-aO-tbY"/>
+                                            <constraint firstAttribute="height" constant="36" id="zyj-Fx-hib"/>
+                                        </constraints>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="CancelClicked:" destination="8Zc-bO-OCd" eventType="touchUpInside" id="rkW-sJ-sts"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Organism" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qK0-FI-DFE">
+                                        <rect key="frame" x="64" y="46.5" width="74" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Uj-iA-ZIM">
+                                        <rect key="frame" x="64" y="215" width="32" height="32"/>
+                                        <state key="normal" image="checkbox_empty.png"/>
+                                        <connections>
+                                            <action selector="ParasitesCheckbox:" destination="8Zc-bO-OCd" eventType="touchUpInside" id="FWC-1H-L9c"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Parasites" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CbE-Cb-eab">
+                                        <rect key="frame" x="104" y="220.5" width="70" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="qK0-FI-DFE" firstAttribute="centerY" secondItem="o79-b0-7jl" secondAttribute="centerY" id="1YH-SR-zlZ"/>
+                                    <constraint firstItem="u5R-F6-Xfh" firstAttribute="top" secondItem="N12-c4-dFa" secondAttribute="bottom" constant="2" id="2fU-sV-q4o"/>
+                                    <constraint firstItem="I1G-Vv-LG9" firstAttribute="leading" secondItem="u5R-F6-Xfh" secondAttribute="trailing" constant="8" id="3Rw-hF-46d"/>
+                                    <constraint firstItem="Bej-zh-QXr" firstAttribute="leading" secondItem="DHU-4t-rIw" secondAttribute="leading" constant="64" id="47E-kR-KqY"/>
+                                    <constraint firstAttribute="trailing" secondItem="I1G-Vv-LG9" secondAttribute="trailing" constant="162" id="49X-39-Jtf"/>
+                                    <constraint firstItem="olx-Zh-yZd" firstAttribute="leading" secondItem="DHU-4t-rIw" secondAttribute="leading" constant="64" id="4dS-O9-VbW"/>
+                                    <constraint firstItem="u5R-F6-Xfh" firstAttribute="leading" secondItem="DHU-4t-rIw" secondAttribute="leading" constant="64" id="4lr-wc-Tst"/>
+                                    <constraint firstAttribute="trailing" secondItem="xNV-tM-EHE" secondAttribute="trailing" constant="143" id="8C0-nA-pJd"/>
+                                    <constraint firstItem="pfJ-fF-dhC" firstAttribute="leading" secondItem="DHU-4t-rIw" secondAttribute="leading" constant="8" id="BMB-MH-5pO"/>
+                                    <constraint firstAttribute="width" constant="309" id="Bee-KL-WwU"/>
+                                    <constraint firstAttribute="trailing" secondItem="bRa-2M-B58" secondAttribute="trailing" constant="148" id="GeV-Gb-Odo"/>
+                                    <constraint firstAttribute="trailing" secondItem="CbE-Cb-eab" secondAttribute="trailing" constant="135" id="Ia4-cL-fws"/>
+                                    <constraint firstItem="CbE-Cb-eab" firstAttribute="leading" secondItem="5Uj-iA-ZIM" secondAttribute="trailing" constant="8" id="KMh-Ap-u0H"/>
+                                    <constraint firstItem="o79-b0-7jl" firstAttribute="top" secondItem="DHU-4t-rIw" secondAttribute="top" constant="41" id="KRv-nh-C47"/>
+                                    <constraint firstItem="I1G-Vv-LG9" firstAttribute="centerY" secondItem="u5R-F6-Xfh" secondAttribute="centerY" id="Kdd-d3-sIe"/>
+                                    <constraint firstItem="CbE-Cb-eab" firstAttribute="leading" secondItem="5Uj-iA-ZIM" secondAttribute="trailing" constant="8" id="OhL-ok-Mr4"/>
+                                    <constraint firstItem="o79-b0-7jl" firstAttribute="leading" secondItem="DHU-4t-rIw" secondAttribute="leading" constant="24" id="QGl-5F-QIP"/>
+                                    <constraint firstItem="N12-c4-dFa" firstAttribute="top" secondItem="qK0-FI-DFE" secondAttribute="bottom" constant="11.5" id="Qyy-D6-xXa"/>
+                                    <constraint firstItem="5Uj-iA-ZIM" firstAttribute="top" secondItem="olx-Zh-yZd" secondAttribute="bottom" constant="2" id="RIM-0s-Zld"/>
+                                    <constraint firstAttribute="trailing" secondItem="CIb-QK-sHG" secondAttribute="trailing" constant="8" id="Rck-El-In0"/>
+                                    <constraint firstItem="CIb-QK-sHG" firstAttribute="leading" secondItem="pfJ-fF-dhC" secondAttribute="trailing" constant="17" id="Swz-th-4ve"/>
+                                    <constraint firstItem="CIb-QK-sHG" firstAttribute="centerY" secondItem="pfJ-fF-dhC" secondAttribute="centerY" id="Wfo-pi-Pxd"/>
+                                    <constraint firstAttribute="height" constant="317" id="XGd-LC-uHw"/>
+                                    <constraint firstItem="xNV-tM-EHE" firstAttribute="leading" secondItem="N12-c4-dFa" secondAttribute="trailing" constant="8" id="Xfo-bW-SSA"/>
+                                    <constraint firstItem="5Uj-iA-ZIM" firstAttribute="leading" secondItem="DHU-4t-rIw" secondAttribute="leading" constant="64" id="ZMm-6O-i8g"/>
+                                    <constraint firstItem="N12-c4-dFa" firstAttribute="leading" secondItem="DHU-4t-rIw" secondAttribute="leading" constant="63" id="Zpm-aN-uIl"/>
+                                    <constraint firstItem="bRa-2M-B58" firstAttribute="centerY" secondItem="Bej-zh-QXr" secondAttribute="centerY" id="awL-fr-pLA"/>
+                                    <constraint firstAttribute="trailing" secondItem="xrX-ze-LMc" secondAttribute="trailing" constant="136" id="b2p-T1-YX1"/>
+                                    <constraint firstItem="olx-Zh-yZd" firstAttribute="top" secondItem="Bej-zh-QXr" secondAttribute="bottom" constant="2" id="cpI-Ec-xiK"/>
+                                    <constraint firstItem="bRa-2M-B58" firstAttribute="leading" secondItem="Bej-zh-QXr" secondAttribute="trailing" constant="8" id="dzG-Jr-oCG"/>
+                                    <constraint firstItem="CbE-Cb-eab" firstAttribute="centerY" secondItem="5Uj-iA-ZIM" secondAttribute="centerY" id="eAc-WZ-ROx"/>
+                                    <constraint firstAttribute="trailing" secondItem="qK0-FI-DFE" secondAttribute="trailing" constant="171" id="eCk-b0-Lgk"/>
+                                    <constraint firstItem="xrX-ze-LMc" firstAttribute="leading" secondItem="olx-Zh-yZd" secondAttribute="trailing" constant="8" id="ltQ-nt-D7u"/>
+                                    <constraint firstItem="pfJ-fF-dhC" firstAttribute="top" secondItem="5Uj-iA-ZIM" secondAttribute="bottom" constant="8" id="pSF-VT-8c2"/>
+                                    <constraint firstItem="Bej-zh-QXr" firstAttribute="top" secondItem="u5R-F6-Xfh" secondAttribute="bottom" constant="2" id="rfr-MS-a9M"/>
+                                    <constraint firstItem="qK0-FI-DFE" firstAttribute="leading" secondItem="o79-b0-7jl" secondAttribute="trailing" constant="8" id="sV1-bP-kCc"/>
+                                    <constraint firstItem="xrX-ze-LMc" firstAttribute="centerY" secondItem="olx-Zh-yZd" secondAttribute="centerY" id="tFV-LK-OKg"/>
+                                    <constraint firstItem="xNV-tM-EHE" firstAttribute="centerY" secondItem="N12-c4-dFa" secondAttribute="centerY" id="vSk-0z-gOe"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="0.24839469178082191" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DHU-4t-rIw" firstAttribute="centerY" secondItem="o5W-3m-ULY" secondAttribute="centerY" id="vuh-yP-iEz"/>
+                            <constraint firstItem="DHU-4t-rIw" firstAttribute="centerX" secondItem="o5W-3m-ULY" secondAttribute="centerX" id="wCH-ml-w0w"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EI3-pB-yHq"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="BTc-9S-KfZ"/>
+                    <connections>
+                        <outlet property="AllCheckboxbtn" destination="o79-b0-7jl" id="CNd-bl-jBI"/>
+                        <outlet property="ApplyClickedOutlet" destination="pfJ-fF-dhC" id="48L-hz-NGB"/>
+                        <outlet property="BacteriaCheckboxbtn" destination="N12-c4-dFa" id="jfq-Zp-bdo"/>
+                        <outlet property="FungiCheckboxbtn" destination="u5R-F6-Xfh" id="7xm-ff-O6E"/>
+                        <outlet property="HIV_AIDSCheckboxbtn" destination="olx-Zh-yZd" id="IOt-KF-G2p"/>
+                        <outlet property="ParasitesCheckboxbtn" destination="5Uj-iA-ZIM" id="hiS-Ox-kQS"/>
+                        <outlet property="VirusCheckboxbtn" destination="Bej-zh-QXr" id="46d-l4-SNW"/>
+                        <outlet property="myPopupView" destination="DHU-4t-rIw" id="TJX-G2-muQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="igw-bd-WMu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="76.811594202898561" y="-388.39285714285711"/>
+        </scene>
+        <!--Check Box Modal Popup-->
+        <scene sceneID="uSB-dW-nvs">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="currentContext" id="gSn-Cr-r60" customClass="CheckBoxModalPopup" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Amq-dN-fy0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c6n-aG-3fK">
+                                <rect key="frame" x="52.5" y="319" width="309" height="258"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oPC-IC-bzp">
+                                        <rect key="frame" x="24" y="41" width="32" height="32"/>
+                                        <state key="normal" image="checkbox_empty.png"/>
+                                        <connections>
+                                            <action selector="AllCheckbox:" destination="gSn-Cr-r60" eventType="touchUpInside" id="jSA-Pw-xXF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WgU-gq-4II">
+                                        <rect key="frame" x="64" y="159" width="32" height="32"/>
+                                        <state key="normal" image="checkbox_empty.png"/>
+                                        <connections>
+                                            <action selector="VirusCheckbox:" destination="gSn-Cr-r60" eventType="touchUpInside" id="uEk-Nc-Kmh"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Virus" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kkb-lX-QgO">
+                                        <rect key="frame" x="104" y="164.5" width="39" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V6H-UU-jnf">
+                                        <rect key="frame" x="63" y="79" width="32" height="32"/>
+                                        <state key="normal" image="checkbox_empty.png"/>
+                                        <connections>
+                                            <action selector="BacteriaCheckbox:" destination="gSn-Cr-r60" eventType="touchUpInside" id="Zk5-Gw-jk8"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bacteria" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4jq-Qi-wjo">
+                                        <rect key="frame" x="103" y="84.5" width="63" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yFO-Af-7ku">
+                                        <rect key="frame" x="64" y="119" width="32" height="32"/>
+                                        <state key="normal" image="checkbox_empty.png"/>
+                                        <connections>
+                                            <action selector="FungiCheckbox:" destination="gSn-Cr-r60" eventType="touchUpInside" id="gCo-4V-Sgh"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fungi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ix7-2K-OCj">
+                                        <rect key="frame" x="104" y="125" width="43" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dvr-qQ-9v5">
+                                        <rect key="frame" x="8" y="220" width="134" height="30"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.1137254902" blue="0.1137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="134" id="9bL-vr-5hT"/>
+                                            <constraint firstAttribute="height" constant="30" id="cKD-VB-EY6"/>
+                                        </constraints>
+                                        <state key="normal" title="Apply">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ApplyClicked:" destination="gSn-Cr-r60" eventType="touchUpInside" id="3yg-6I-cAW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LuW-M7-pmj">
+                                        <rect key="frame" x="150" y="220" width="151" height="30"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.1137254902" blue="0.1137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="151" id="pCg-0V-5pF"/>
+                                        </constraints>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="CancelClicked:" destination="gSn-Cr-r60" eventType="touchUpInside" id="aDv-jU-f9k"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Organism" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qL9-IY-n26">
+                                        <rect key="frame" x="64" y="46.5" width="74" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="WgU-gq-4II" firstAttribute="leading" secondItem="c6n-aG-3fK" secondAttribute="leading" constant="64" id="2Uo-yJ-uDi"/>
+                                    <constraint firstItem="qL9-IY-n26" firstAttribute="centerY" secondItem="oPC-IC-bzp" secondAttribute="centerY" id="2gR-v8-F0D"/>
+                                    <constraint firstAttribute="trailing" secondItem="LuW-M7-pmj" secondAttribute="trailing" constant="8" id="31d-y1-SuD"/>
+                                    <constraint firstItem="WgU-gq-4II" firstAttribute="top" secondItem="yFO-Af-7ku" secondAttribute="bottom" constant="8" id="7T2-Vd-LbL"/>
+                                    <constraint firstItem="oPC-IC-bzp" firstAttribute="leading" secondItem="c6n-aG-3fK" secondAttribute="leading" constant="24" id="Auc-Cd-7Q2"/>
+                                    <constraint firstAttribute="width" constant="309" id="C7h-Jx-jug"/>
+                                    <constraint firstAttribute="height" constant="258" id="EFI-fB-LVT"/>
+                                    <constraint firstItem="4jq-Qi-wjo" firstAttribute="centerY" secondItem="V6H-UU-jnf" secondAttribute="centerY" id="F1P-5v-KB3"/>
+                                    <constraint firstItem="Ix7-2K-OCj" firstAttribute="leading" secondItem="yFO-Af-7ku" secondAttribute="trailing" constant="8" id="Hj2-ig-KRQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="qL9-IY-n26" secondAttribute="trailing" constant="171" id="LD6-Qv-rea"/>
+                                    <constraint firstItem="V6H-UU-jnf" firstAttribute="top" secondItem="qL9-IY-n26" secondAttribute="bottom" constant="11.5" id="Mgn-C4-QOk"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ix7-2K-OCj" secondAttribute="trailing" constant="162" id="Ouh-pC-noK"/>
+                                    <constraint firstItem="4jq-Qi-wjo" firstAttribute="leading" secondItem="V6H-UU-jnf" secondAttribute="trailing" constant="8" id="Zyr-ad-iME"/>
+                                    <constraint firstItem="Kkb-lX-QgO" firstAttribute="leading" secondItem="WgU-gq-4II" secondAttribute="trailing" constant="8" id="aS7-Hs-kOf"/>
+                                    <constraint firstAttribute="bottom" secondItem="LuW-M7-pmj" secondAttribute="bottom" constant="8" id="dI2-vn-oeP"/>
+                                    <constraint firstItem="Ix7-2K-OCj" firstAttribute="centerY" secondItem="yFO-Af-7ku" secondAttribute="centerY" id="dXM-XA-JJj"/>
+                                    <constraint firstItem="yFO-Af-7ku" firstAttribute="top" secondItem="V6H-UU-jnf" secondAttribute="bottom" constant="8" id="eTj-hS-0Cj"/>
+                                    <constraint firstItem="LuW-M7-pmj" firstAttribute="leading" secondItem="Dvr-qQ-9v5" secondAttribute="trailing" constant="8" id="gOg-Bv-nRu"/>
+                                    <constraint firstItem="yFO-Af-7ku" firstAttribute="leading" secondItem="c6n-aG-3fK" secondAttribute="leading" constant="64" id="i5v-nE-oCK"/>
+                                    <constraint firstItem="qL9-IY-n26" firstAttribute="leading" secondItem="oPC-IC-bzp" secondAttribute="trailing" constant="8" id="jC9-no-xpI"/>
+                                    <constraint firstAttribute="trailing" secondItem="Kkb-lX-QgO" secondAttribute="trailing" constant="166" id="moO-nP-yOs"/>
+                                    <constraint firstItem="LuW-M7-pmj" firstAttribute="centerY" secondItem="Dvr-qQ-9v5" secondAttribute="centerY" id="nHZ-3A-sFB"/>
+                                    <constraint firstAttribute="trailing" secondItem="4jq-Qi-wjo" secondAttribute="trailing" constant="143" id="nYi-Vh-OpU"/>
+                                    <constraint firstItem="Kkb-lX-QgO" firstAttribute="centerY" secondItem="WgU-gq-4II" secondAttribute="centerY" id="oBR-wC-du9"/>
+                                    <constraint firstItem="oPC-IC-bzp" firstAttribute="top" secondItem="c6n-aG-3fK" secondAttribute="top" constant="41" id="pXW-jC-tDc"/>
+                                    <constraint firstItem="V6H-UU-jnf" firstAttribute="leading" secondItem="c6n-aG-3fK" secondAttribute="leading" constant="63" id="vR3-kb-aOA"/>
+                                    <constraint firstItem="Dvr-qQ-9v5" firstAttribute="top" secondItem="WgU-gq-4II" secondAttribute="bottom" constant="29" id="zex-DW-fd6"/>
+                                    <constraint firstItem="Dvr-qQ-9v5" firstAttribute="leading" secondItem="c6n-aG-3fK" secondAttribute="leading" constant="8" id="zpG-KS-dtc"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="0.24839469180000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="c6n-aG-3fK" firstAttribute="centerY" secondItem="Amq-dN-fy0" secondAttribute="centerY" id="Hlm-Ml-M3x"/>
+                            <constraint firstItem="c6n-aG-3fK" firstAttribute="centerX" secondItem="Amq-dN-fy0" secondAttribute="centerX" id="f9V-Ee-zlV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aRP-dO-G7s"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="O6S-cm-aX1"/>
+                    <connections>
+                        <outlet property="AllCheckboxbtn" destination="oPC-IC-bzp" id="BGy-Ms-a8b"/>
+                        <outlet property="ApplyClickedOutlet" destination="Dvr-qQ-9v5" id="t2t-sr-u12"/>
+                        <outlet property="BacteriaCheckboxbtn" destination="V6H-UU-jnf" id="kIe-BI-BpT"/>
+                        <outlet property="FungiCheckboxbtn" destination="yFO-Af-7ku" id="gHI-mf-hhv"/>
+                        <outlet property="VirusCheckboxbtn" destination="WgU-gq-4II" id="zgg-KM-2Xq"/>
+                        <outlet property="myPopupView" destination="c6n-aG-3fK" id="gmD-Ja-Sew"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xAt-Du-iRu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1010" y="-388"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="checkbox_empty.png" width="32" height="32"/>
+        <image name="filter.png" width="24" height="24"/>
+    </resources>
+</document>
